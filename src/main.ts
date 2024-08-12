@@ -18,7 +18,7 @@ export async function run(): Promise<void> {
     await wait(parseInt(ms, 10))
     core.debug(new Date().toTimeString())
 
-    exec.exec('echo "Hello, World!" && echo "bye world"')
+    exec.exec('echo "Hello, World! \n This is a test"')
 
     // Set outputs for other workflow steps to use
     core.setOutput('time', new Date().toTimeString())

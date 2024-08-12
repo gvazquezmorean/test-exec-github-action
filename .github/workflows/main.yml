@@ -14,6 +14,6 @@ jobs:
       - name: Test exex
         id: test-exec
         uses: ./
-        
+
       - name: Print test exec
         run: echo "${{ steps.test-exec.outputs.result }}"
