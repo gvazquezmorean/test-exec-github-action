@@ -7,6 +7,10 @@ jobs:
     name: Exec GitHub Actions Test
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@v4
+
       - name: Test exex
         id: test-exec
         uses: ./
