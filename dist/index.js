@@ -26198,7 +26198,7 @@ async function run() {
         await (0, wait_1.wait)(parseInt(ms, 10));
         core.debug(new Date().toTimeString());
         exec.exec('ls -la');
-        exec.exec('java -jar ./jar/WordPrinter.jar');
+        exec.exec('java -jar src/jar/WordPrinter.jar');
         // Set outputs for other workflow steps to use
         core.setOutput('time', new Date().toTimeString());
     }
