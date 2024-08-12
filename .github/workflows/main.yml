@@ -10,6 +10,11 @@ jobs:
       - name: Checkout
         id: checkout
         uses: actions/checkout@v4
+      
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
 
       - name: Test exex
         id: test-exec
