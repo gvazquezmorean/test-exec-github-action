@@ -1,0 +1,15 @@
+name: Test
+
+on: workflow_dispatch
+
+jobs:
+  test-action:
+    name: Exec GitHub Actions Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test exex
+        id: test-exec
+        uses: ./
+        
+      - name: Print test exec
+        run: echo "${{ steps.test-exec.outputs.result }}"
