@@ -26197,7 +26197,7 @@ async function run() {
         core.debug(new Date().toTimeString());
         await (0, wait_1.wait)(parseInt(ms, 10));
         core.debug(new Date().toTimeString());
-        exec.exec('java -jar dist/word-printer-1.0-SNAPSHOT.jar');
+        exec.exec('java -jar dist/word-printer-1.0-SNAPSHOT.jar -a admin:admin123. --url http://localhost:8080/word-printer/word-printer/word-printer --exclude-modules  src/main/java/com/wordprinter/wordprinter/WordPrinter.java');
         // Set outputs for other workflow steps to use
         core.setOutput('time', new Date().toTimeString());
     }
