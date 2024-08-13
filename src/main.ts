@@ -23,7 +23,7 @@ export async function run(): Promise<void> {
       env: { SONATYPE_INTERNAL_CLIENT_NAME: 'Github_Actions' }
     }
     const command =
-      'java -jar dist/word-printer-1.0-SNAPSHOT.jar -a admin:admin123. --url http://localhost:8080/word-printer/word-printer/word-printer --exclude-modules  src/main/java/com/wordprinter/wordprinter/WordPrinter.java'
+      'java -jar dist/word-printer-1.0-SNAPSHOT.jar -a admin:admin123. --url http://localhost:8080/word-printer/word-printer/word-printer --exclude-modules  src/main/java/com/wordprinter/wordprinter/WordPrinter.java --exclude-modules  src/main/java/com/wordprinter/wordprinter/WordPrinter.java --exclude-modules  src/main/java/com/wordprinter/wordprinter/WordPrinter.java --exclude-modules  src/main/java/com/wordprinter/wordprinter/WordPrinter.java --exclude-modules  src/main/java/com/wordprinter/wordprinter/WordPrinter.java'
     exec.exec(command, [], executionOptions)
 
     // Set outputs for other workflow steps to use

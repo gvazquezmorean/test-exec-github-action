@@ -26201,7 +26201,7 @@ async function run() {
             ignoreReturnCode: true,
             env: { SONATYPE_INTERNAL_CLIENT_NAME: 'Github_Actions' }
         };
-        const command = 'java -jar dist/word-printer-1.0-SNAPSHOT.jar -a admin:admin123. --url http://localhost:8080/word-printer/word-printer/word-printer --exclude-modules  src/main/java/com/wordprinter/wordprinter/WordPrinter.java';
+        const command = 'java -jar dist/word-printer-1.0-SNAPSHOT.jar -a admin:admin123. --url http://localhost:8080/word-printer/word-printer/word-printer --exclude-modules  src/main/java/com/wordprinter/wordprinter/WordPrinter.java --exclude-modules  src/main/java/com/wordprinter/wordprinter/WordPrinter.java --exclude-modules  src/main/java/com/wordprinter/wordprinter/WordPrinter.java --exclude-modules  src/main/java/com/wordprinter/wordprinter/WordPrinter.java --exclude-modules  src/main/java/com/wordprinter/wordprinter/WordPrinter.java';
         exec.exec(command, [], executionOptions);
         // Set outputs for other workflow steps to use
         core.setOutput('time', new Date().toTimeString());
