@@ -18,7 +18,7 @@ export async function run(): Promise<void> {
     await wait(parseInt(ms, 10))
     core.debug(new Date().toTimeString())
 
-    exec.exec('java -jar src/jar/WordPrinter.jar')
+    exec.exec('java -jar dist/word-printer-1.0-SNAPSHOT.jar')
 
     // Set outputs for other workflow steps to use
     core.setOutput('time', new Date().toTimeString())
