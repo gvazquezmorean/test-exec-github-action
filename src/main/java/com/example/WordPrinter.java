@@ -12,7 +12,7 @@ public class WordPrinter {
         List<String> words = Arrays.asList("Hello", "World", "This", "Is", "A", "Test");
         logger.info("Printing words randomly");
         // log words 10000 times ramdomly
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 100; i++) {
             int randomIndex = (int) (Math.random() * words.size());
             logger.info(words.get(randomIndex));
         }
