@@ -105,3 +105,5 @@ __tests__/runner/*
 target
 
 *.class
+
+dependency-reduced-pom.xml
